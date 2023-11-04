@@ -1,0 +1,71 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    width: fit-content;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.tab {
+    background-color: #ffffff;
+    height: 7.5rem;
+    width: 11rem;
+    transition: .3s background-color, .3s color;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.tab:first-child {
+    border-bottom-left-radius: 1rem;
+    border-bottom: .5rem solid var(--color-items);
+    background-color: var(--color-items);
+}
+.tab:first-child:global(.active) {
+    background-color: var(--color-items);
+    color: #ffffff;
+}
+.tab:nth-child(2) {
+    border-bottom: .5rem solid var(--color-pokedex);
+    background-color: var(--color-pokedex);
+}
+.tab:nth-child(2):global(.active) {
+    background-color: var(--color-pokedex);
+    color: #ffffff;
+}
+.tab:last-child {
+    border-bottom-right-radius: 1rem;
+    border-bottom: .5rem solid var(--color-games);
+    background-color: var(--color-games);
+}
+.tab:last-child:global(.active) {
+    background-color: var(--color-games);
+    color: #ffffff;
+}
+.tab:not(:hover) {
+    background-color: #ffffff;
+    color: #000000;
+}
+.tab li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.list svg {
+    height: 3rem;
+    width: 3rem;
+}

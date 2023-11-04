@@ -1,0 +1,22 @@
+.header {
+    height: var(--height-header);
+    background-color: #ffffff;
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    margin-bottom: 4rem;
+}
+.content {
+    margin: 0 auto;
+    height: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo {
+    color: #e32020;
+    width: 8rem;
+    height: 4rem;
+}

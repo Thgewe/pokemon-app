@@ -11,7 +11,11 @@ const ErrorPage = () => {
 			<h1>Oops!</h1>
 			<p>
 				Sorry,{" "}
-				{isRouteErrorResponse(error) ? <span>{error.status}</span> : "an unexpected"}{" "}
+				{isRouteErrorResponse(error) ? (
+					<span>{error.status}</span>
+				) : (
+					"an unexpected"
+				)}{" "}
 				error has occurred.
 			</p>
 			{isRouteErrorResponse(error) && (

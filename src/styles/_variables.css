@@ -1,7 +1,14 @@
 :root {
+    --max-width: 1280px;
+    --height-header: 5rem;
+
     --font-main: 'Montserrat', sans-serif;
+
 }
 
 #root-app[data-theme="default"] {
     --color-error: red;
+    --color-pokedex: #e32020;
+    --color-items: #dc940b;
+    --color-games: #30b010;
 }

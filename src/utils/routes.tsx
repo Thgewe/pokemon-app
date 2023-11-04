@@ -1,11 +1,11 @@
 import React from "react";
 import App from "../App";
-import {RouteObject} from "react-router-dom";
+import { RouteObject } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
 import PokedexPage from "../pages/PokedexPage/PokedexPage";
 import GamesPage from "../pages/GamesPage/GamesPage";
 import PokemonPage from "../pages/PokemonPage/PokemonPage";
-import {EMainPaths, EPaths, EPokedexPaths} from "../models/routes_paths";
+import { EMainPaths, EPaths, EPokedexPaths } from "../models/routes_paths";
 
 export const routes: RouteObject[] = [
 	{
@@ -14,7 +14,7 @@ export const routes: RouteObject[] = [
 		errorElement: <App error={true} />,
 		children: [
 			{
-				path: EMainPaths.home,
+				path: EMainPaths.items,
 				element: <HomePage />,
 			},
 			{
@@ -23,14 +23,14 @@ export const routes: RouteObject[] = [
 				children: [
 					{
 						path: EPokedexPaths.pokemon,
-						element: <PokemonPage />
-					}
-				]
+						element: <PokemonPage />,
+					},
+				],
 			},
 			{
 				path: EMainPaths.games,
 				element: <GamesPage />,
-			}
+			},
 		],
 	},
 ];
