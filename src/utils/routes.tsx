@@ -6,6 +6,7 @@ import PokedexPage from "../pages/PokedexPage/PokedexPage";
 import GamesPage from "../pages/GamesPage/GamesPage";
 import PokemonPage from "../pages/PokemonPage/PokemonPage";
 import { EMainPaths, EPaths, EPokedexPaths } from "../models/routes_paths";
+import ItemsPage from "../pages/ItemsPage/ItemsPage";
 
 export const routes: RouteObject[] = [
 	{
@@ -14,8 +15,12 @@ export const routes: RouteObject[] = [
 		errorElement: <App error={true} />,
 		children: [
 			{
-				path: EMainPaths.items,
+				path: EMainPaths.home,
 				element: <HomePage />,
+			},
+			{
+				path: EMainPaths.items,
+				element: <ItemsPage />,
 			},
 			{
 				path: EMainPaths.pokedex,

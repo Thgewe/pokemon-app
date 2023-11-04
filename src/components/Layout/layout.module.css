@@ -6,4 +6,5 @@
 }
 .main {
     flex-grow: 2;
+    padding-inline: var(--padding-inline-min);
 }
