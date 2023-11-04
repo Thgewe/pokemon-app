@@ -1,3 +1,7 @@
 :root {
     --font-main: 'Montserrat', sans-serif;
 }
+
+#root-app[data-theme="default"] {
+    --color-error: red;
+}
