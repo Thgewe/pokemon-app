@@ -1,0 +1,33 @@
+.footer {
+    height: var(--height-header);
+    background-color: var(--color-primary);
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    margin-top: 4rem;
+    padding-inline: var(--padding-inline-min);
+}
+.content {
+    height: 100%;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    color: var(--color-primary-text);
+    display: flex;
+    justify-content: space-between;
+    padding-block: .5rem;
+}
+.content h3 {
+    align-self: flex-end;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.content a {
+    align-self: center;
+    color: inherit;
+    display: block;
+    height: 80%;
+    transition: .3s color;
+}
+.content a:hover {
+    color: #ffffff;
+}

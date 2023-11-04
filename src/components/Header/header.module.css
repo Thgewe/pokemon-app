@@ -1,10 +1,11 @@
 .header {
     height: var(--height-header);
-    background-color: #ffffff;
+    background-color: var(--color-primary);
     -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
     box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
     margin-bottom: 4rem;
+    padding-inline: var(--padding-inline-min);
 }
 .content {
     margin: 0 auto;
@@ -14,9 +15,10 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    color: var(--color-primary-text);
 }
 .logo {
-    color: #e32020;
+    color: inherit;
     width: 8rem;
     height: 4rem;
 }

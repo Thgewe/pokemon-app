@@ -55,7 +55,7 @@
 }
 .tab:not(:hover) {
     background-color: #ffffff;
-    color: #000000;
+    color: var(--color-primary-text);
 }
 .tab li {
     height: 100%;
