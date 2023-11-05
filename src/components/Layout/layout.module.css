@@ -6,10 +6,15 @@
 }
 .main {
     flex-grow: 2;
-    padding: 4rem var(--padding-inline-min) 3rem;
     background: url("../../images/png/square_bg.png") repeat;
 }
 .container {
     margin: 0 auto;
-    max-width: var(--max-width);
+    padding: 4rem var(--padding-inline-min) 3rem;
+    background-color: #ffffff;
+    height: 100%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.2);
+    max-width: calc(var(--max-width) + 2 * var(--padding-inline-min));
 }
