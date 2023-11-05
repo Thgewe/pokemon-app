@@ -7,7 +7,11 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<div className={cl.layout}>
 			<Header />
-			<main className={cl.main}>{children}</main>
+			<main className={cl.main}>
+				<div className={cl.container}>
+					{children}
+				</div>
+			</main>
 			<Footer />
 		</div>
 	);
