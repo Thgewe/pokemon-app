@@ -1,5 +1,6 @@
 .header {
     height: var(--height-header);
+    min-height: var(--height-header);
     background-color: var(--color-primary);
     -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
