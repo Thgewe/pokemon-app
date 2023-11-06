@@ -1,5 +1,11 @@
 import { TPokemonTypes } from "./EPokemonTypesColor";
 
+export interface IListOfResources {
+	count: number;
+	next:  null | string;
+	previous: null | string;
+	results: INamedAPIResource[];
+}
 export interface INamedAPIResource {
 	name: string;
 	url: string;

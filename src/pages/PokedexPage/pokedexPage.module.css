@@ -3,3 +3,42 @@
     max-width: var(--max-width);
     color: var(--color-primary-text);
 }
+.page h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 3rem 2rem;
+}
+.pokemons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    gap: 1.5rem;
+}
+.pokemon {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    transition: transform .3s, color .3s;
+    color: #ffffff;
+}
+.pokemon:hover {
+    transform: scale(1.05);
+}
+.pokemon li {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, .5);
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
