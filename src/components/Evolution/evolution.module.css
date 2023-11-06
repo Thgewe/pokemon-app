@@ -1,0 +1,42 @@
+.chain {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.chain h3 {
+    font-size: 2.5rem;
+    color: var(--color-primary-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chain h3 > span {
+    font-size: 1rem;
+}
+.chain a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #4069ff;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: color .3s;
+}
+.chain a:global(.active) {
+    color: var(--color-pokedex);
+}
+.chain a:not(:global(.active)):hover {
+    color: var(--color-pokedex);
+}
+.item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.next {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
